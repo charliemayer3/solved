@@ -5,6 +5,8 @@ const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+
+mongoose.connect("mongodb://heroku_z9j0r03d:asg44bkccjr04i3ast57du036r@ds121599.mlab.com:21599/heroku_z9j0r03d")
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
